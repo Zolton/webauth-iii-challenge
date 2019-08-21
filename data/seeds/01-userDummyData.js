@@ -1,5 +1,6 @@
 exports.seed = function(knex) {
   // Deletes ALL existing entries
+  // import, run over password, set password as hash
   return knex("users")
     .truncate()
     .then(function() {
